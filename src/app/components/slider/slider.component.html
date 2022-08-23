@@ -1,1 +1,11 @@
-<p>slider works!</p>
+<ng-container *ngIf="feed$ | async as feed">
+    <div class="slider" | *ngIf="feed.length">
+        <i class="icons">
+
+        </i>
+        <ng-content></ng-content>
+        <i class="icons">
+
+        </i>
+    </div>
+</ng-container>

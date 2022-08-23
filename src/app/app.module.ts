@@ -9,9 +9,16 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { CardComponent } from './components/card/card.component';
+import { MainComponent } from './pages/main/main.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, SliderComponent, CardComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    SliderComponent,
+    CardComponent,
+    MainComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
