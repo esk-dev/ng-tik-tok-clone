@@ -1,11 +1,15 @@
 <ng-container *ngIf="feed$ | async as feed">
-    <div class="slider" | *ngIf="feed.length">
-        <i class="icons">
-
-        </i>
-        <ng-content></ng-content>
-        <i class="icons">
-
-        </i>
-    </div>
+  <div class="slider" *ngIf="feed.length">
+    <fa-icon
+      (click)="prevVideo(feed.length)"
+      class="button"
+      [icon]="faArrowLeft"
+    ></fa-icon>
+    <app-card [post]="feed[index]"></app-card>
+    <fa-icon
+      class="button"
+      (click)="nextVideo(feed.length)"
+      [icon]="faArrowRight"
+    ></fa-icon>
+  </div>
 </ng-container>

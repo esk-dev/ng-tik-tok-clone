@@ -1,0 +1,19 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin: auto auto;
+  .button {
+    font-size: 32px;
+    transition: all 0.3s;
+    border: none;
+    padding: 0;
+    &:hover {
+      transition: all 0.3s;
+      cursor: pointer;
+      color: #392759;
+      // color: var(--secondary);
+    }
+  }
+}
